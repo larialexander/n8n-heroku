@@ -29,15 +29,14 @@
         "value": "false"
       }
     },
-    "addons": [
-      {
-        "plan": "heroku-postgresql",
-        "options": {
-          "version": "16"
-        }
-      },
-      {
-        "plan": "papertrail:choklad"
-      }
-    ]
+    "formation": {
+  "web": {
+    "quantity": 1,
+    "size": "basic"
+  }
+},"addons": [
+  {
+    "plan": "heroku-postgresql:essential-0"
+  }
+]
   }
